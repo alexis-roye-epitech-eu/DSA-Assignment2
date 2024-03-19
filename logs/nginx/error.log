@@ -1,0 +1,2 @@
+2024/03/19 19:28:29 [error] 10152#3908: *21183 WSARecv() failed (10054: FormatMessage() error:(15100)) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10003", host: "assignment-2.local"
+2024/03/19 19:28:29 [error] 10152#3908: *21366 WSARecv() failed (10054: FormatMessage() error:(15105)) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /wp-admin/?localwp_auto_login=1 HTTP/1.0", upstream: "fastcgi://127.0.0.1:10003", host: "assignment-2.local"

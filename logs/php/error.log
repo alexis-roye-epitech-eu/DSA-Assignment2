@@ -1,0 +1,50 @@
+[12-Mar-2024 14:13:11 UTC] PHP Warning:  Undefined property: WP_Ajax_Upgrader_Skin::$api in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-admin\includes\class-theme-upgrader.php on line 160
+[19-Mar-2024 06:01:18 UTC] PHP Warning:  Undefined property: WP_Ajax_Upgrader_Skin::$api in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-admin\includes\class-theme-upgrader.php on line 160
+[19-Mar-2024 07:11:27 UTC] PHP Fatal error:  Uncaught Exception: Access denied. in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\settings\page\manager.php:105
+Stack trace:
+#0 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\base\document.php(1772): Elementor\Core\Settings\Page\Manager->ajax_before_save_settings(Array, NULL)
+#1 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\base\document.php(891): Elementor\Core\Base\Document->save_settings(Array)
+#2 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\kits\manager.php(295): Elementor\Core\Base\Document->update_settings(Array)
+#3 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\kits\manager.php(464): Elementor\Core\Kits\Manager->update_kit_settings_based_on_option('site_name', 'BirdLife')
+#4 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-hook.php(326): Elementor\Core\Kits\Manager->Elementor\Core\Kits\{closure}('Assignment 2', 'BirdLife')
+#5 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\option.php(883): do_action('update_option_b...', 'Assignment 2', 'BirdLife', 'blogname')
+#8 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-customize-setting.php(659): update_option('blogname', 'BirdLife', true)
+#9 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-customize-setting.php(685): WP_Customize_Setting->set_root_value('BirdLife')
+#10 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-customize-setting.php(541): WP_Customize_Setting->update('BirdLife')
+#11 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-customize-manager.php(3576): WP_Customize_Setting->save()
+#12 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\theme.php(3637): WP_Customize_Manager->_publish_changeset_values(22)
+#13 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-hook.php(324): _wp_customize_publish_changeset('publish', 'auto-draft', Object(WP_Post))
+#14 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#15 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#16 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\post.php(5390): do_action('transition_post...', 'publish', 'auto-draft', Object(WP_Post))
+#17 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\post.php(4650): wp_transition_post_status('publish', 'auto-draft', Object(WP_Post))
+#18 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\post.php(4862): wp_insert_post(Array, true, true)
+#19 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-customize-manager.php(2969): wp_update_post(Array, true)
+#20 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-customize-manager.php(2531): WP_Customize_Manager->save_changeset_post(Array)
+#21 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-hook.php(324): WP_Customize_Manager->save('')
+#22 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#23 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#24 C:\Users\wisea\Local Sites\assignment-2\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_customi...')
+#25 {main}
+  thrown in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\settings\page\manager.php on line 105
+[19-Mar-2024 19:25:34 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\base\document.php on line 1826
+[19-Mar-2024 19:25:34 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\base\document.php on line 1835
+[19-Mar-2024 19:25:34 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\kits\manager.php on line 280
+[19-Mar-2024 19:25:35 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 19:25:35 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 19:25:35 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 19:41:45 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\base\document.php on line 1826
+[19-Mar-2024 19:41:45 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\base\document.php on line 1835
+[19-Mar-2024 19:41:45 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\kits\manager.php on line 280
+[19-Mar-2024 19:41:47 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 19:41:47 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 19:41:47 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 19:51:52 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\base\document.php on line 1826
+[19-Mar-2024 19:51:52 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\base\document.php on line 1835
+[19-Mar-2024 19:51:52 UTC] PHP Warning:  Attempt to read property "post_status" on null in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\elementor\core\kits\manager.php on line 280
+[19-Mar-2024 20:01:57 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 20:01:57 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 20:01:57 UTC] PHP Warning:  Uninitialized string offset 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\WP2Static\HTMLProcessor.php on line 2
+[19-Mar-2024 20:02:09 UTC] PHP Warning:  Undefined array key 0 in C:\Users\wisea\Local Sites\assignment-2\app\public\wp-content\plugins\static-html-output-plugin\plugin\CSSParser\Parser.php on line 2
